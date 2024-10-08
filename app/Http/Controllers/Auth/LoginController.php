@@ -13,11 +13,11 @@ class LoginController extends Controller
     /**
      * Display the login view.
      */
-    public function create(): View
+    public function form(): View
     {
         return view('auth.login');
     }
-    public function attemptLogin(LoginRequest $request, LoginService $loginService): RedirectResponse
+    public function submit(LoginRequest $request, LoginService $loginService): RedirectResponse
     {
         $loginService->authenticate($request);
 
