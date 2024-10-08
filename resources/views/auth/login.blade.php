@@ -27,7 +27,7 @@
   <!-- Add links for Forgot password and Register -->
   <div class="mt-3">
     <a href="#" class="text-body-secondary">{{ __('Forgot password?') }}</a>
-    <a href="#" class="text-body-secondary float-end">{{ __('Register') }}</a>
+    <a href="{{ route('register') }}" class="text-body-secondary float-end">{{ __('Register') }}</a>
   </div>
 </form>
 @endsection
